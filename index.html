@@ -1,98 +1,1230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags for SEO and Mobile Optimization -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Akshat Network Hub - Connect, Share, and Showcase Your LinkedIn Achievements!">
-    <title>Akshat Network Hub Announcement</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Akshat Network Hub - Premier destination for professional announcements, LinkedIn showcases, and networking opportunities. Connect with professionals, share achievements, and expand your network today!">
+    <meta name="keywords" content="Akshat Network Hub, Akshat Prasad LinkedIn, Professional Networking, Announcements, Career Growth, Professional Development">
+    <meta name="author" content="Akshat Network Hub">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Akshat Network Hub - Professional Networking & Announcements">
+    <meta property="og:description" content="Connect with professionals, showcase achievements, and stay updated with Akshat Network Hub announcements and LinkedIn posts.">
+    <meta property="og:url" content="https://itsakshatnetworkhub-881238.github.io/Akshat-881236">
+    <meta property="og:image" content="https://akshat-881236.github.io/TrackerJS/Assets/AKNH/icon-192.png">
+    <meta property="og:site_name" content="Akshat Network Hub">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Akshat Network Hub - Professional Networking & Announcements">
+    <meta name="twitter:description" content="Connect with professionals, showcase achievements, and stay updated with Akshat Network Hub announcements and LinkedIn posts.">
+    <meta name="twitter:image" content="https://akshat-881236.github.io/TrackerJS/Assets/AKNH/icon-192.png">
+    <meta name="twitter:creator" content="@akshatpsd2005">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://github.com/itsakshatnetworkhub-881238/Akshat-881236">
+    
+    <!-- Favicon and Logo -->
+    <link rel="icon" type="image/png" href="https://akshat-881236.github.io/TrackerJS/Assets/AKNH/icon-192.png">
+    <link rel="apple-touch-icon" href="https://akshat-881236.github.io/TrackerJS/Assets/AKNH/icon-192.png">
+    <link rel="image_src" href="https://akshat-881236.github.io/TrackerJS/Assets/AKNH/icon-192.png">
+    
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Akshat Network Hub",
+        "url": "https://itsakshatnetworkhub-881238.github.io/Akshat-881236",
+        "logo": "https://akshat-881236.github.io/TrackerJS/Assets/AKNH/icon-192.png",
+        "description": "Akshat Network Hub - Premier destination for professional announcements, LinkedIn showcases, and networking opportunities. Connect with professionals, share achievements, and expand your network today!",
+        "sameAs": [
+            "https://in.linkedin.com/in/akshat-prasad-anh-b867323b0",
+            "https://github.com/itsakshatnetworkhub-881238",
+            "https://itsakshatnetworkhub-881238.github.io/ANH-Analysis/",
+            "https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=akshat-prasad-b53936379",
+            "https://x.com/akshatpsd2005",
+            "https://github.com/itsakshatnetworkhub/"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "email": "its.akshatnetworkhub23@gmail.com"
+        }
+    }
+    </script>
+    
+    <!-- Person Schema - JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Akshat Prasad",
+        "url": "https://akshat-881236.github.io/LocalRepo/",
+        "sameAs": [
+            "https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=akshat-prasad-b53936379",
+            "https://github.com/itsakshatnetworkhub-881238",
+            "https://itsakshatnetworkhub-881238.github.io/ANH-Analysis/",
+            "https://x.com/akshatpsd2005",
+            "https://github.com/itsakshatnetworkhub/"
+        ],
+        "jobTitle": "Professional Networking Platform",
+        "image": "https://akshat-881236.github.io/TrackerJS/Assets/AKNH/icon-192.png"
+    }
+    </script>
+
+    <title>Akshat Network Hub - Professional Announcements & LinkedIn Showcases</title>
+    
+    <style>
+        /* ============================================
+           RESET AND BASE STYLES
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        /* ============================================
+           HEADER AND NAVIGATION
+           ============================================ */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        /* ============================================
+           BREADCRUMBS
+           ============================================ */
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 1rem auto;
+            padding: 0 1rem;
+        }
+
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            color: #999;
+        }
+
+        /* ============================================
+           MAIN CONTENT
+           ============================================ */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 2rem;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section h1 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        section h2 {
+            color: #764ba2;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        section h3 {
+            color: #333;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* ============================================
+           CARDS AND POSTS
+           ============================================ */
+        .announcement-card,
+        .LinkedIn-Post {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .announcement-card:hover,
+        .LinkedIn-Post:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .post-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #667eea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .post-meta {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post-meta strong {
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+
+        .post-date {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .post-content {
+            color: #555;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .post-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .post-action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .post-action-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+
+        /* ============================================
+           SIDEBAR
+           ============================================ */
+        aside {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+
+        aside h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .sidebar-section {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .sidebar-section:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-link {
+            display: block;
+            padding: 0.5rem 0;
+            color: #667eea;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .sidebar-link:hover {
+            color: #764ba2;
+            padding-left: 0.5rem;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background: #333;
+            color: white;
+            padding: 3rem 1rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #667eea;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #555;
+            padding-top: 1rem;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN - TABLETS
+           ============================================ */
+        @media (max-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                position: static;
+            }
+
+            .header-container {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            section h1 {
+                font-size: 1.5rem;
+            }
+
+            section h2 {
+                font-size: 1.25rem;
+            }
+
+            .breadcrumb {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN - MOBILE
+           ============================================ */
+        @media (max-width: 480px) {
+            html {
+                font-size: 13px;
+            }
+
+            header {
+                padding: 1rem 0.5rem;
+            }
+
+            .header-container {
+                flex-direction: column;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            .logo img {
+                width: 40px;
+                height: 40px;
+            }
+
+            nav {
+                gap: 0.75rem;
+                justify-content: center;
+            }
+
+            nav a {
+                padding: 0.4rem 0.75rem;
+                font-size: 0.85rem;
+            }
+
+            main {
+                padding: 1rem 0.5rem;
+                gap: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            section h1 {
+                font-size: 1.25rem;
+            }
+
+            section h2 {
+                font-size: 1.1rem;
+            }
+
+            .announcement-card,
+            .LinkedIn-Post {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .post-actions {
+                flex-direction: column;
+            }
+
+            .post-action-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .breadcrumb {
+                font-size: 0.75rem;
+            }
+
+            .breadcrumb span {
+                margin: 0 0.25rem;
+            }
+        }
+
+        /* ============================================
+           UTILITY CLASSES
+           ============================================ */
+        .icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-1 { margin-top: 0.5rem; }
+        .mt-2 { margin-top: 1rem; }
+        .mt-3 { margin-top: 1.5rem; }
+
+        .mb-1 { margin-bottom: 0.5rem; }
+        .mb-2 { margin-bottom: 1rem; }
+        .mb-3 { margin-bottom: 1.5rem; }
+
+        .p-1 { padding: 0.5rem; }
+        .p-2 { padding: 1rem; }
+        .p-3 { padding: 1.5rem; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Akshat Network Hub</h1>
-        <p>Stay updated with our latest announcements and showcases!</p>
+    <!-- ============================================
+         HEADER AND NAVIGATION
+         ============================================ -->
+    <header role="banner">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <img src="https://akshat-881236.github.io/TrackerJS/Assets/AKNH/icon-192.png" alt="Akshat Network Hub Logo" loading="lazy">
+                <span>Akshat Network Hub</span>
+            </a>
+            <nav role="navigation" aria-label="Main Navigation">
+                <a href="#announcements"><i class="bi bi-megaphone-fill"></i> Announcements</a>
+                <a href="#linkedin-posts"><i class="bi bi-linkedin"></i> LinkedIn Posts</a>
+                <a href="#about"><i class="bi bi-info-circle-fill"></i> About</a>
+                <a href="#contact"><i class="bi bi-envelope-fill"></i> Contact</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="announcement">
-            <h2>Latest Announcements</h2>
-            <div id="announcement-list">
-                <!-- Announcements will be dynamically inserted here -->
+
+    <!-- ============================================
+         BREADCRUMBS - EXTERNAL LINKS
+         ============================================ -->
+    <div class="breadcrumb-container">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <a href="https://github.com/itsakshatnetworkhub-881238" title="Akshat Network Hub GitHub Profile">
+                <i class="bi bi-github"></i> GitHub Profile
+            </a>
+            <span>›</span>
+            <a href="https://in.linkedin.com/in/akshat-prasad-anh-b867323b0" title="Akshat Network Hub LinkedIn Company Page">
+                <i class="bi bi-linkedin"></i> LinkedIn Profile
+            </a>
+            <span>›</span>
+            <a href="https://github.com/itsakshatnetworkhub-881238/Akshat-881236" title="Repository">
+                <i class="bi bi-repository"></i> Repository
+            </a>
+        </nav>
+
+        <!-- BREADCRUMBS - INTERNAL LINKS -->
+        <nav aria-label="Page Navigation" class="breadcrumb">
+            <a href="#announcements">Announcements</a>
+            <span>›</span>
+            <a href="#linkedin-posts">LinkedIn Posts</a>
+            <span>›</span>
+            <a href="#about">About Us</a>
+            <span>›</span>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <!-- ============================================
+         MAIN CONTENT
+         ============================================ -->
+    <main role="main">
+        <div class="content-wrapper">
+            <!-- ============================================
+                 HERO SECTION
+                 ============================================ -->
+            <section id="hero" class="hero">
+                <h1><i class="bi bi-star-fill"></i> Welcome to Akshat Network Hub</h1>
+                <p>Your premier destination for professional announcements, LinkedIn showcases, and networking excellence. Connect with industry leaders, share your achievements, and expand your professional network.</p>
+                <p>I'm Akshat Prasad , a IT Sector Student currently pursuing BCA from DPG Universe , Gurugram affiliated to Maharshi Dayanand University, Rohtak. My Aim is to contribute to the field of emerging AI , data science and data analytics . I am hosting this site with core perspective to built my Social Presence and to ensure that I LinkedIn Post reach out to you at Current time.</p>
+                <p>Akshat Network Hub verified sites are identified by both prefix <code>https://akshat-881236.github.io/</code> and <code>https://itsakshatnetworkhub-881238.github.io/</code>. Both Github Pages belong to Same Owner and Akshat Network Hub.</p>
+            </section>
+
+            <!-- ============================================
+                 ANNOUNCEMENTS SECTION
+                 ============================================ -->
+            <section id="announcements">
+                <h2><i class="bi bi-megaphone-fill"></i> Latest Announcements</h2>
+                <p>Stay informed with our latest updates and news from Akshat Network Hub.</p>
+                
+                <div id="announcement-container">
+                    <!-- Announcements will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <!-- ============================================
+                 LINKEDIN POSTS SECTION
+                 ============================================ -->
+            <section id="linkedin-posts">
+                <h2><i class="bi bi-linkedin"></i> Featured LinkedIn Posts</h2>
+                <p>Curated professional posts and achievements from our network.</p>
+                
+                <div id="linkedin-container">
+                    <!-- LinkedIn posts will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <!-- ============================================
+                 ABOUT SECTION
+                 ============================================ -->
+            <section id="about">
+                <h2><i class="bi bi-info-circle-fill"></i> About Akshat Network Hub</h2>
+                <h3>Our Mission</h3>
+                <p>Akshat Network Hub is dedicated to connecting professionals, fostering meaningful relationships, and providing a platform for individuals to showcase my expertise and achievements in the professional world.</p>
+                
+                <h3>Why Choose Us?</h3>
+                <ul style="margin-left: 1.5rem; color: #555;">
+                    <li>Learn about my social presence and contribution to the IT world.</li>
+                    <li>Learn about all my in-built On Campus Project at DPG Universe.</li>
+                    <li>Stay updated with latest professional announcements</li>
+                    <li>Build meaningful professional relationships</li>
+                    <li>Get Access to Education Blogs , Notes and Professional Research Papers.</li>
+                </ul>
+
+                <h3>Our Values</h3>
+                <p><strong>Integrity:</strong> We maintain the highest standards of honesty and transparency in all our interactions.</p>
+                <p><strong>Excellence:</strong> We strive for excellence in every aspect of our platform and services.</p>
+                <p><strong>Community:</strong> We believe in the power of community and collaboration among professionals.</p>
+                <p>Lets Join Together to Built up new Technologies , Projects and achieve new height.</p>
+            </section>
+
+            <!-- ============================================
+                 CONTACT SECTION
+                 ============================================ -->
+            <section id="contact">
+                <h2><i class="bi bi-envelope-fill"></i> Get In Touch</h2>
+                <p>Have questions or want to collaborate? We'd love to hear from you!</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+                    <div style="background: #f5f7fa; padding: 1rem; border-radius: 6px;">
+                        <h3 style="color: #667eea; margin-bottom: 0.5rem;">
+                            <i class="bi bi-envelope"></i> Email
+                        </h3>
+                        <a href="mailto:akshatpsd2005@gmail.com" style="color: #667eea; text-decoration: none;">
+                            akshatpsd2005@gmail.com
+                        </a>
+                    </div>
+                    <div style="background: #f5f7fa; padding: 1rem; border-radius: 6px;">
+                        <h3 style="color: #667eea; margin-bottom: 0.5rem;">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </h3>
+                        <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=akshat-prasad-b53936379" target="_blank" rel="noopener noreferrer" style="color: #667eea; text-decoration: none;">
+                            Visit Our Profile
+                        </a>
+                    </div>
+                    <div style="background: #f5f7fa; padding: 1rem; border-radius: 6px;">
+                        <h3 style="color: #667eea; margin-bottom: 0.5rem;">
+                            <i class="bi bi-github"></i> GitHub
+                        </h3>
+                        <a href="https://github.com/itsakshatnetworkhub-881238" target="_blank" rel="noopener noreferrer" style="color: #667eea; text-decoration: none;">
+                            Follow Us
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ============================================
+             SIDEBAR
+             ============================================ -->
+        <aside role="complementary" aria-label="Sidebar">
+            <h3><i class="bi bi-lightning-fill"></i> Quick Stats</h3>
+            <div class="sidebar-section">
+                <div class="stat-box">
+                    <div class="stat-number" id="stat-posts">12</div>
+                    <div class="stat-label">Posts</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="stat-announcements">5</div>
+                    <div class="stat-label">Announcements</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="stat-members">150+</div>
+                    <div class="stat-label">Members</div>
+                </div>
             </div>
-        </section>
-        <section id="showcase">
-            <h2>LinkedIn Post Showcase</h2>
-            <div id="showcase-list">
-                <!-- LinkedIn posts will be displayed here -->
+
+            <h3><i class="bi bi-link-45deg"></i> External Links</h3>
+            <div class="sidebar-section">
+                <a href="https://github.com/itsakshatnetworkhub-881238" target="_blank" rel="noopener noreferrer" class="sidebar-link">
+                    <i class="bi bi-github"></i> GitHub Profile
+                </a>
+                <a href="https://in.linkedin.com/in/akshat-prasad-anh-b867323b0" target="_blank" rel="noopener noreferrer" class="sidebar-link">
+                    <i class="bi bi-linkedin"></i> LinkedIn Company
+                </a>
+                <a href="https://github.com/itsakshatnetworkhub-881238/Akshat-881236" target="_blank" rel="noopener noreferrer" class="sidebar-link">
+                    <i class="bi bi-repository"></i> Repository
+                </a>
             </div>
-        </section>
+
+            <h3><i class="bi bi-bookmark-fill"></i> Quick Navigation</h3>
+            <div class="sidebar-section">
+                <a href="#announcements" class="sidebar-link">Announcements</a>
+                <a href="#linkedin-posts" class="sidebar-link">LinkedIn Posts</a>
+                <a href="#about" class="sidebar-link">About Us</a>
+                <a href="#contact" class="sidebar-link">Contact</a>
+            </div>
+
+            <h3><i class="bi bi-tag-fill"></i> Categories</h3>
+            <div class="sidebar-section">
+                <a href="#" class="sidebar-link">Professional Growth</a>
+                <a href="#" class="sidebar-link">Networking Tips</a>
+                <a href="#" class="sidebar-link">Career Opportunities</a>
+                <a href="#" class="sidebar-link">Industry News</a>
+                <a href="#" class="sidebar-link">Success Stories</a>
+            </div>
+        </aside>
     </main>
-    <footer>
-        <p>&copy; 2026 Akshat Network Hub. All rights reserved.</p>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="bi bi-building"></i> About</h4>
+                <p>Akshat Network Hub is your premier destination for professional networking and LinkedIn announcements.</p>
+            </div>
+            <div class="footer-section">
+                <h4><i class="bi bi-link-45deg"></i> Resources</h4>
+                <a href="https://github.com/itsakshatnetworkhub-881238">GitHub Profile</a>
+                <a href="https://in.linkedin.com/in/akshat-prasad-anh-b867323b0">LinkedIn Page</a>
+                <a href="https://github.com/itsakshatnetworkhub-881238/Akshat-881236">Repository</a>
+            </div>
+            <div class="footer-section">
+                <h4><i class="bi bi-question-circle-fill"></i> Support</h4>
+                <a href="mailto:its.akshatnetworkhub23@gmail.com">Email Support</a>
+                <a href="#contact">Contact Form</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-section">
+                <h4><i class="bi bi-file-earmark-text"></i> Legal</h4>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#disclaimer">Disclaimer</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Akshat Network Hub</strong>. All rights reserved. | Designed with <i class="bi bi-heart-fill" style="color: #667eea;"></i> by Akshat Network Hub | <a href="https://github.com/itsakshatnetworkhub-881238" style="color: #667eea; text-decoration: none;">GitHub</a> | <a href="https://in.linkedin.com/in/akshat-prasad-anh-b867323b0" style="color: #667eea; text-decoration: none;">LinkedIn</a></p>
+        </div>
     </footer>
+
+    <script>
+        // ============================================
+        // LINKEDIN POSTS DATABASE
+        // ============================================
+        const LinkedIn_Post_dB = [
+            {
+                id: 1,
+                title: "Professional Growth in 2026",
+                description: "Exploring new opportunities for career development and professional growth. The year brings exciting possibilities for networking and skill enhancement.",
+                link: "https://linkedin.com/company/akshat-network-hub",
+                date_of_publication: "2026-03-02",
+                author: "Akshat Network Hub",
+                likes: 245,
+                comments: 32,
+                shares: 18,
+                category: "Career Development"
+            },
+            {
+                id: 2,
+                title: "The Power of Networking",
+                description: "Networking is not just about making connections; it's about building meaningful relationships that can propel your career forward. Let's connect and grow together!",
+                link: "https://linkedin.com/company/akshat-network-hub",
+                date_of_publication: "2026-02-28",
+                author: "Akshat Network Hub",
+                likes: 189,
+                comments: 28,
+                shares: 15,
+                category: "Networking Tips"
+            },
+            {
+                id: 3,
+                title: "Announcing New Features!",
+                description: "We're excited to announce new features coming to Akshat Network Hub. These enhancements will provide better connectivity and engagement for our members.",
+                link: "https://linkedin.com/company/akshat-network-hub",
+                date_of_publication: "2026-02-25",
+                author: "Akshat Network Hub",
+                likes: 312,
+                comments: 45,
+                shares: 28,
+                category: "Announcements"
+            },
+            {
+                id: 4,
+                title: "Success Story: From Zero to Hero",
+                description: "Meet our community member who transformed their career through consistent networking and professional development. Read their inspiring journey.",
+                link: "https://linkedin.com/company/akshat-network-hub",
+                date_of_publication: "2026-02-20",
+                author: "Akshat Network Hub",
+                likes: 428,
+                comments: 67,
+                shares: 42,
+                category: "Success Stories"
+            },
+            {
+                id: 5,
+                title: "Industry Trends 2026",
+                description: "Insights into the latest trends shaping the professional landscape. Understanding these changes will help you stay ahead in your career.",
+                link: "https://linkedin.com/company/akshat-network-hub",
+                date_of_publication: "2026-02-15",
+                author: "Akshat Network Hub",
+                likes: 267,
+                comments: 39,
+                shares: 22,
+                category: "Industry News"
+            },
+            {
+                id: 6,
+                title: "Celebrating Our Community",
+                description: "Thank you to all our members for making Akshat Network Hub a thriving community of professionals. Together, we're building the future!",
+                link: "https://linkedin.com/company/akshat-network-hub",
+                date_of_publication: "2026-02-10",
+                author: "Akshat Network Hub",
+                likes: 356,
+                comments: 54,
+                shares: 31,
+                category: "Community"
+            },
+            {
+                id: 7,
+                title: "Webinar: Personal Branding",
+                description: "Join us for an exclusive webinar on personal branding strategies that will help you stand out in your professional field.",
+                link: "https://linkedin.com/company/akshat-network-hub",
+                date_of_publication: "2026-02-05",
+                author: "Akshat Network Hub",
+                likes: 198,
+                comments: 26,
+                shares: 14,
+                category: "Learning"
+            },
+            {
+                id: 8,
+                title: "Partnership Announcement",
+                description: "We're thrilled to announce new partnerships that will bring added value to our community members. More details coming soon!",
+                link: "https://linkedin.com/company/akshat-network-hub",
+                date_of_publication: "2026-02-01",
+                author: "Akshat Network Hub",
+                likes: 234,
+                comments: 35,
+                shares: 19,
+                category: "Announcements"
+            },
+            {
+                id: 9,
+                title: "Remote Work Revolution",
+                description: "How remote work is changing the dynamics of professional networking and what it means for your career growth.",
+                link: "https://linkedin.com/company/akshat-network-hub",
+                date_of_publication: "2026-01-28",
+                author: "Akshat Network Hub",
+                likes: 289,
+                comments: 41,
+                shares: 25,
+                category: "Career Development"
+            },
+            {
+                id: 10,
+                title: "Member Spotlight",
+                description: "This week, we're highlighting an exceptional member of our community and their remarkable professional journey.",
+                link: "https://linkedin.com/company/akshat-network-hub",
+                date_of_publication: "2026-01-25",
+                author: "Akshat Network Hub",
+                likes: 167,
+                comments: 22,
+                shares: 11,
+                category: "Member Spotlight"
+            },
+            {
+                id: 11,
+                title: "2026 Goals: Setting Yourself Up for Success",
+                description: "New year, new goals! Here are strategies to help you set achievable professional goals and track your progress throughout 2026.",
+                link: "https://linkedin.com/company/akshat-network-hub",
+                date_of_publication: "2026-01-20",
+                author: "Akshat Network Hub",
+                likes: 302,
+                comments: 48,
+                shares: 29,
+                category: "Professional Growth"
+            },
+            {
+                id: 12,
+                title: "Welcome to 2026!",
+                description: "Starting the new year with renewed enthusiasm and commitment to fostering a vibrant community of professionals. Let's make 2026 unforgettable!",
+                link: "https://linkedin.com/company/akshat-network-hub",
+                date_of_publication: "2026-01-01",
+                author: "Akshat Network Hub",
+                likes: 445,
+                comments: 72,
+                shares: 38,
+                category: "Announcements"
+            }
+        ];
+
+        // ============================================
+        // ANNOUNCEMENTS DATABASE
+        // ============================================
+        const announcementDatabase = [
+            {
+                id: 1,
+                title: "March 2026 Updates",
+                content: "We're rolling out new features and improvements to enhance your experience on Akshat Network Hub.",
+                date: "2026-03-02",
+                priority: "high"
+            },
+            {
+                id: 2,
+                title: "Community Webinar Series",
+                content: "Join our monthly webinars featuring industry experts and thought leaders in professional development.",
+                date: "2026-02-28",
+                priority: "medium"
+            },
+            {
+                id: 3,
+                title: "New Partnership with Industry Leaders",
+                content: "We're excited to announce partnerships that will bring exclusive opportunities to our members.",
+                date: "2026-02-25",
+                priority: "high"
+            },
+            {
+                id: 4,
+                title: "Platform Maintenance Scheduled",
+                content: "Scheduled maintenance on March 5th from 2-4 AM UTC for system upgrades.",
+                date: "2026-02-20",
+                priority: "medium"
+            },
+            {
+                id: 5,
+                title: "Member Success Stories",
+                content: "Share your professional journey and inspire others in our community.",
+                date: "2026-02-15",
+                priority: "low"
+            }
+        ];
+
+        // ============================================
+        // RENDER LINKEDIN POSTS
+        // ============================================
+        function renderLinkedInPosts() {
+            const container = document.getElementById('linkedin-container');
+            container.innerHTML = '';
+
+            LinkedIn_Post_dB.forEach((post, index) => {
+                const postDate = new Date(post.date_of_publication);
+                const formattedDate = postDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+
+                const postHTML = `
+                    <div class="LinkedIn-Post" id="post-${post.id}">
+                        <div class="post-header">
+                            <div class="post-avatar">
+                                <i class="bi bi-person-fill"></i>
+                            </div>
+                            <div class="post-meta">
+                                <strong>${post.author}</strong>
+                                <span class="post-date">${formattedDate}</span>
+                                <span class="post-date" style="font-size: 0.75rem; color: #667eea;">📌 ${post.category}</span>
+                            </div>
+                        </div>
+                        <h3 style="color: #333; margin-bottom: 0.5rem;">${post.title}</h3>
+                        <p class="post-content">${post.description}</p>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.85rem; color: #666;">
+                            <span><i class="bi bi-hand-thumbs-up"></i> ${post.likes} Likes</span>
+                            <span><i class="bi bi-chat-dots"></i> ${post.comments} Comments</span>
+                            <span><i class="bi bi-arrow-repeat"></i> ${post.shares} Shares</span>
+                        </div>
+                        <div class="post-actions">
+                            <a href="${post.link}" target="_blank" rel="noopener noreferrer" class="post-action-btn">
+                                <i class="bi bi-linkedin"></i> View on LinkedIn
+                            </a>
+                            <button class="post-action-btn" onclick="likePost(${post.id})" style="background: #764ba2;">
+                                <i class="bi bi-hand-thumbs-up"></i> Like
+                            </button>
+                            <button class="post-action-btn" onclick="sharePost(${post.id})" style="background: #50c878;">
+                                <i class="bi bi-share"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += postHTML;
+            });
+
+            // Update stats
+            document.getElementById('stat-posts').textContent = LinkedIn_Post_dB.length;
+        }
+
+        // ============================================
+        // RENDER ANNOUNCEMENTS
+        // ============================================
+        function renderAnnouncements() {
+            const container = document.getElementById('announcement-container');
+            container.innerHTML = '';
+
+            announcementDatabase.forEach((announcement) => {
+                const annDate = new Date(announcement.date);
+                const formattedDate = annDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+
+                const priorityColor = {
+                    'high': '#e74c3c',
+                    'medium': '#f39c12',
+                    'low': '#27ae60'
+                };
+
+                const announcementHTML = `
+                    <div class="announcement-card" id="ann-${announcement.id}">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: ${priorityColor[announcement.priority]};"></span>
+                            <span style="font-size: 0.85rem; color: #666; text-transform: uppercase; font-weight: bold;">
+                                ${announcement.priority} Priority
+                            </span>
+                        </div>
+                        <h3 style="color: #333; margin-bottom: 0.5rem;">${announcement.title}</h3>
+                        <p style="color: #555; margin-bottom: 0.5rem;">${announcement.content}</p>
+                        <p style="font-size: 0.85rem; color: #999;">📅 ${formattedDate}</p>
+                    </div>
+                `;
+                container.innerHTML += announcementHTML;
+            });
+
+            // Update stats
+            document.getElementById('stat-announcements').textContent = announcementDatabase.length;
+        }
+
+        // ============================================
+        // UTILITY FUNCTIONS
+        // ============================================
+        function likePost(postId) {
+            const post = LinkedIn_Post_dB.find(p => p.id === postId);
+            if (post) {
+                post.likes += 1;
+                renderLinkedInPosts();
+                showNotification(`Liked! Total likes: ${post.likes}`);
+            }
+        }
+
+        function sharePost(postId) {
+            const post = LinkedIn_Post_dB.find(p => p.id === postId);
+            if (post) {
+                post.shares += 1;
+                renderLinkedInPosts();
+                showNotification(`Shared! Share count: ${post.shares}`);
+            }
+        }
+
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #667eea;
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 4px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+                z-index: 9999;
+                animation: slideIn 0.3s ease;
+            `;
+            document.body.appendChild(notification);
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+
+        // ============================================
+        // INITIALIZE PAGE
+        // ============================================
+        document.addEventListener('DOMContentLoaded', function() {
+            renderLinkedInPosts();
+            renderAnnouncements();
+            
+            // Add smooth scroll behavior for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && document.querySelector(href)) {
+                        e.preventDefault();
+                        document.querySelector(href).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+
+        // ============================================
+        // ANIMATION KEYFRAMES (CSS in JS)
+        // ============================================
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from {
+                    transform: translateX(400px);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes slideOut {
+                from {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                to {
+                    transform: translateX(400px);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 </body>
 </html>
-
-/* CSS Code - style.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-main {
-    padding: 20px;
-}
-#announcement, #showcase {
-    background: #ffffff;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #35424a;
-    color: #fff;
-}
-
-/* JavaScript Code - script.js */
-const announcements = [
-    { id: 1, text: 'New feature launch on March 5th!' },
-    { id: 2, text: 'Join us for a webinar on March 10th.' }
-];
-
-const showcasePosts = [
-    { id: 1, title: 'My Latest Project', link: 'https://linkedin.com/in/yourprofile' },
-    { id: 2, title: 'Networking Tips', link: 'https://linkedin.com/in/yourprofile' }
-];
-
-function displayAnnouncements() {
-    const announcementList = document.getElementById('announcement-list');
-    announcements.forEach(announcement => {
-        const div = document.createElement('div');
-        div.innerText = announcement.text;
-        announcementList.appendChild(div);
-    });
-}
-
-function displayShowcase() {
-    const showcaseList = document.getElementById('showcase-list');
-    showcasePosts.forEach(post => {
-        const div = document.createElement('div');
-        div.innerHTML = `<a href="${post.link}">${post.title}</a>`;
-        showcaseList.appendChild(div);
-    });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    displayAnnouncements();
-    displayShowcase();
-});
