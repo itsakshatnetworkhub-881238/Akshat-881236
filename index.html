@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akshat Network Hub - Connect, Share, and Showcase Your LinkedIn Achievements!">
+    <title>Akshat Network Hub Announcement</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Akshat Network Hub</h1>
+        <p>Stay updated with our latest announcements and showcases!</p>
+    </header>
+    <main>
+        <section id="announcement">
+            <h2>Latest Announcements</h2>
+            <div id="announcement-list">
+                <!-- Announcements will be dynamically inserted here -->
+            </div>
+        </section>
+        <section id="showcase">
+            <h2>LinkedIn Post Showcase</h2>
+            <div id="showcase-list">
+                <!-- LinkedIn posts will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Akshat Network Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+/* CSS Code - style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+main {
+    padding: 20px;
+}
+#announcement, #showcase {
+    background: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #35424a;
+    color: #fff;
+}
+
+/* JavaScript Code - script.js */
+const announcements = [
+    { id: 1, text: 'New feature launch on March 5th!' },
+    { id: 2, text: 'Join us for a webinar on March 10th.' }
+];
+
+const showcasePosts = [
+    { id: 1, title: 'My Latest Project', link: 'https://linkedin.com/in/yourprofile' },
+    { id: 2, title: 'Networking Tips', link: 'https://linkedin.com/in/yourprofile' }
+];
+
+function displayAnnouncements() {
+    const announcementList = document.getElementById('announcement-list');
+    announcements.forEach(announcement => {
+        const div = document.createElement('div');
+        div.innerText = announcement.text;
+        announcementList.appendChild(div);
+    });
+}
+
+function displayShowcase() {
+    const showcaseList = document.getElementById('showcase-list');
+    showcasePosts.forEach(post => {
+        const div = document.createElement('div');
+        div.innerHTML = `<a href="${post.link}">${post.title}</a>`;
+        showcaseList.appendChild(div);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    displayAnnouncements();
+    displayShowcase();
+});
