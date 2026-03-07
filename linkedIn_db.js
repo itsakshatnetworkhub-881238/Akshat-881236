@@ -109,5 +109,17 @@
                 comments: 2,
                 shares: 0,
                 category: "Update Announcement"
+            },
+            {
+                id: 10,
+                title: "🚀 New Resource Uploaded in Learning Club Site titled Java Programming Practical File",
+                description: "This page represents the BCA SEM - 4 Java Programming Practical File Lab Manual Document, listing all the practical perform by me in DPG Degree college, Gurugram. The document serves as a comprehensive record of the practical exercises completed during the semester, showcasing the application of theoretical concepts in Java programming through hands-on lab work.",
+                link: "https://www.linkedin.com/feed/update/urn:li:activity:7435954525661974528/",
+                date_of_publication: "2026-03-07",
+                author: "Akshat Prasad",
+                likes: 4,
+                comments: 2,
+                shares: 0,
+                category: "Resource Announcement"
             }
         ];
